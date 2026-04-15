@@ -1,0 +1,15 @@
+site:
+  title: "Muhammad Noman"
+  basePath: "Portfolio"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/noman.js"
+      api: "build/libs/noman.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/noman.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080

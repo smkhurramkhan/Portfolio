@@ -1,0 +1,35 @@
+<<<<<<< HEAD
+# General ignores
+.DS_Store
+build
+out
+kotlin-js-store
+
+# IntelliJ ignores
+*.iml
+/*.ipr
+
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/gradle.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/artifacts
+/.idea/compiler.xml
+/.idea/jarRepositories.xml
+/.idea/*.iml
+/.idea/modules
+/.idea/libraries-with-intellij-classes.xml
+
+# Gradle ignores
+.gradle
+
+# Kotlin ignores
+.kotlin
+=======
+# Kobweb ignores
+.kobweb/*
+!.kobweb/conf.yaml
+>>>>>>> c051af22e1eb29c93e6497c061d4dc901c71b1f8
