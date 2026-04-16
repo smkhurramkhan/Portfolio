@@ -11,7 +11,7 @@ object Res {
         const val MEDIUM_URL =  ""
         const val MAIL_TO = "mailto:muhammadnoman8012@gmail.com"
 
-        const val RESUME_URL = "https://drive.google.com/file/d/1R09At85qo79ji88BtyOGAS_ET171FJib/view?usp=sharing"
+        const val RESUME_URL = "https://drive.google.com/file/d/1gcmsgCZtwvru00d9ICI_dGlOMbH_Bsxx/view?usp=sharing"
         const val DEVELOPER_LOCATION_ON_MAP = ""
 
 

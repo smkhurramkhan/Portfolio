@@ -22,27 +22,80 @@ fun TimeDisplay(
     timeZone: String
 ) {
 
-    var currentTime by remember { mutableStateOf(getFormattedTime(timeZone)) }
+//    var currentTime by remember { mutableStateOf(getFormattedTime(timeZone)) }
+//
+//    LaunchedEffect(Unit) {
+//        while (true) {
+//            currentTime = getFormattedTime(timeZone)
+//            delay(1.seconds)
+//        }
+//    }
+//
+//    SpanText(
+//        text = currentTime,
+//        modifier = FooterTextStyle.toModifier().then(modifier)
+//            .width(5.cssRem)
+//            .alignContent(AlignContent.End)
+//            .color(
+//                when (ColorMode.current) {
+//                    ColorMode.LIGHT -> Colors.Gray
+//                    ColorMode.DARK -> Colors.LightGray
+//                }
+//            )
+//    )
 
-    LaunchedEffect(Unit) {
-        while (true) {
-            currentTime = getFormattedTime(timeZone)
-            delay(1.seconds)
+    // Check if we're in browser environment
+    val isBrowser = remember {
+        js("typeof window !== 'undefined'") as Boolean
+    }
+
+    var currentTime by remember { mutableStateOf("") }
+
+    // Only run the timer if we're in a browser
+    if (isBrowser) {
+        LaunchedEffect(Unit) {
+            // Initial update
+            currentTime = getFormattedTimeSafe(timeZone)
+
+            // Update every second
+            while (true) {
+                currentTime = getFormattedTimeSafe(timeZone)
+                delay(1.seconds)
+            }
+        }
+    } else {
+        // During static export, show a static time
+        LaunchedEffect(Unit) {
+            currentTime = "12:00" // Default for export
         }
     }
 
-    SpanText(
-        text = currentTime,
-        modifier = FooterTextStyle.toModifier().then(modifier)
-            .width(5.cssRem)
-            .alignContent(AlignContent.End)
-            .color(
-                when (ColorMode.current) {
-                    ColorMode.LIGHT -> Colors.Gray
-                    ColorMode.DARK -> Colors.LightGray
-                }
-            )
-    )
+    // Only show if we have a time
+    if (currentTime.isNotEmpty()) {
+        SpanText(
+            text = currentTime,
+            modifier = FooterTextStyle.toModifier().then(modifier)
+                .width(5.cssRem)
+                .alignContent(AlignContent.End)
+                .color(
+                    when (ColorMode.current) {
+                        ColorMode.LIGHT -> Colors.Gray
+                        ColorMode.DARK -> Colors.LightGray
+                    }
+                )
+        )
+    }
+}
+
+// Safe version that works during export
+fun getFormattedTimeSafe(timeZone: String): String {
+    return try {
+        val options = js("{ timeZone: timeZone, hour: '2-digit', minute: '2-digit', hour12: true }")
+        Date().toLocaleTimeString("en-US", options).toString()
+    } catch (e: dynamic) {
+        // Fallback for static export
+        "12:00"
+    }
 }
 
 // Function to get the formatted time for a specific time zone

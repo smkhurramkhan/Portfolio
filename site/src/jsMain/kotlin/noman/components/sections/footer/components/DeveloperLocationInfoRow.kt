@@ -147,6 +147,14 @@ fun DeveloperLocationInfoRow(
 
 fun getCopyrightText(): String {
 
-    val currentYear = Date().getFullYear().toString()
+//    val currentYear = Date().getFullYear().toString()
+//    return "© $currentYear | ${Res.Constants.COPYRIGHT}"
+    val isBrowser = js("typeof window !== 'undefined'") as Boolean
+    val currentYear = if (isBrowser) {
+        Date().getFullYear().toString()
+    } else {
+        // Static year for export
+        "2026"
+    }
     return "© $currentYear | ${Res.Constants.COPYRIGHT}"
 }
