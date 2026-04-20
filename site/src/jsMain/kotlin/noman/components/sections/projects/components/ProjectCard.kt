@@ -190,7 +190,7 @@ fun ProjectCard(project: Project) {
                         .justifyContent(JustifyContent.Center)
                 ) {
                     Image(
-                        src = Res.Images.GITHUB_LIGHT_LOGO,
+                        src = project.suggestIcon,
                         modifier = Modifier.size(14.px)
                     )
                 }

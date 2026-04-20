@@ -23,6 +23,11 @@ object Res {
 
 
         // Projects Links
+        const val ALL_DOC_READER_URL = "https://play.google.com/store/apps/details?id=com.catchyapps.alldocumentviewer"
+        const val MEDIC_URL = "https://play.google.com/store/apps/details?id=com.bayernsapps.medgpt"
+        const val WHATS_DELETE_URL = "https://play.google.com/store/apps/details?id=com.catchyapps.whatsdelete"
+
+        // github projects
         const val VIDEO_GRAB_URL = "https://github.com/muhammadnoman11/videograb-android"
         const val EASY_FIREBASE_NOTIFIER_URL = "https://github.com/muhammadnoman11/EasyFirebaseNotifier"
         const val IMG_CRAFT_URL = "https://github.com/muhammadnoman11/ImgCraft"
@@ -102,10 +107,18 @@ object Res {
         const val MARKDOWN_LIGHT_LOGO = "images/Skills/markdown_light.svg"
         const val MARKDOWN_DARK_LOGO = "images/Skills/markdown_dark.svg"
 
+        const val PLAY_STORE_LOGO = "images/Skills/playstore.svg"
+
 
         // Projects
+        const val ALL_DOC_READER = "images/Projects/all_doc_reader.png"
+        const val MEDIC = "images/Projects/med_gpt.png"
+        const val WHATS_DELETE = "images/Projects/whats_delete.png"
+
+        // github projects
         const val VIDEO_GRAB_PROJECT = "images/Projects/video_grab.png"
         const val IMG_CRAFT = "images/Projects/imgcraft.png"
         const val FIREBASE_NOTIFIER = "images/Projects/firebase_notifier.png"
+
     }
 }

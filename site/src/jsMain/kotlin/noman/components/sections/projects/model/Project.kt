@@ -23,4 +23,5 @@ data class Project(
     val tag: String,
     val techs: List<String>,
     val url: String,
+    val suggestIcon : String
 )
