@@ -12,6 +12,8 @@ import noman.components.utils.Res.Constants
 //    )
 
 
+fun getAllProjects() = emptyList<Project>()
+/*
 fun getAllProjects() = listOf(
     Project(
         imageSrc = Res.Images.VIDEO_GRAB_PROJECT,
@@ -37,4 +39,4 @@ fun getAllProjects() = listOf(
         techs = listOf("Kotlin", "NDK", "Compose", "xml"),
         url = Constants.IMG_CRAFT_URL,
     ),
-)
+)*/

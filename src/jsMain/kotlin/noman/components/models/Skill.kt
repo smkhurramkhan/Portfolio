@@ -20,23 +20,49 @@ enum class Skill(
         Res.Images.KOTLIN_LOGO,
         Res.Images.KOTLIN_LOGO,
         SkillCategory.Languages,
-        3
+        5
     ),
     Java(
         "Java",
-        "Adept",
+        "Skilled",
         Res.Images.JAVA_LOGO,
         Res.Images.JAVA_LOGO,
         SkillCategory.Languages,
-        2
+        4
     ),
+    PHP(
+        "PHP",
+        "Skilled",
+        Res.Images.PHP_LOGO,
+        Res.Images.PHP_LOGO,
+        SkillCategory.Languages,
+        4
+    ),
+    NODE(
+        "Node",
+        "Skilled",
+        Res.Images.NODE_JS_LOGO,
+        Res.Images.NODE_JS_LOGO,
+        SkillCategory.Languages,
+        3
+    ),
+
+    XMPP(
+        "XMPP",
+        "Skilled",
+        Res.Images.XMPP_LOGO,
+        Res.Images.XMPP_LOGO,
+        SkillCategory.Languages,
+        3
+    ),
+
     CPP(
         "C++",
         "Skilled",
         Res.Images.CPP_LOGO,
         Res.Images.CPP_LOGO,
         SkillCategory.Languages,
-        3
+        4
     ),
     AndroidStudio(
         "Android Studio",
@@ -44,7 +70,7 @@ enum class Skill(
         Res.Images.ANDROID_STUDIO_DARK_LOGO,
         Res.Images.ANDROID_STUDIO_LIGHT_LOGO,
         SkillCategory.ToolsIDEs,
-        3
+        5
     ),
     IntellijIdea(
         "IntelliJ IDEA",
@@ -52,7 +78,7 @@ enum class Skill(
         Res.Images.INTELLIJ_IDEA_LOGO,
         Res.Images.INTELLIJ_IDEA_LOGO,
         SkillCategory.ToolsIDEs,
-        3
+        5
     ),
     Git(
         "Git",
@@ -60,7 +86,7 @@ enum class Skill(
         Res.Images.GIT_LOGO,
         Res.Images.GIT_LOGO,
         SkillCategory.ToolsIDEs,
-        3
+        5
     ),
     Github(
         "GitHub",
@@ -68,7 +94,7 @@ enum class Skill(
         Res.Images.GITHUB_DARK_LOGO,
         Res.Images.GITHUB_LIGHT_LOGO,
         SkillCategory.ToolsIDEs,
-        3
+        5
     ),
     Figma(
         "Figma",
@@ -76,7 +102,7 @@ enum class Skill(
         Res.Images.FIGMA_LOGO,
         Res.Images.FIGMA_LOGO,
         SkillCategory.ToolsIDEs,
-        2
+        4
     ),
     Postman(
         "Postman",
@@ -84,7 +110,7 @@ enum class Skill(
         Res.Images.POSTMAN_LOGO,
         Res.Images.POSTMAN_LOGO,
         SkillCategory.ToolsIDEs,
-        3
+        4
     ),
     Markdown(
         "Markdown",
@@ -92,7 +118,7 @@ enum class Skill(
         Res.Images.MARKDOWN_DARK_LOGO,
         Res.Images.MARKDOWN_LIGHT_LOGO,
         SkillCategory.ToolsIDEs,
-        2
+        3
     ),
     Compose(
         "Compose",
@@ -100,7 +126,7 @@ enum class Skill(
         Res.Images.COMPOSE_LOGO,
         Res.Images.COMPOSE_LOGO,
         SkillCategory.Frameworks,
-        3
+        4
     ),
     Jetpack(
         "Jetpack",
@@ -108,7 +134,7 @@ enum class Skill(
         Res.Images.JETPACK_DARK_LOGO,
         Res.Images.JETPACK_LIGHT_LOGO,
         SkillCategory.Frameworks,
-        3
+        4
     ),
     Firebase(
         "Firebase",
@@ -120,11 +146,11 @@ enum class Skill(
     ),
     Gradle(
         "Gradle",
-        "Adept",
+        "Skilled",
         Res.Images.GRADLE_DARK_LOGO,
         Res.Images.GRADLE_LIGHT_LOGO,
         SkillCategory.Frameworks,
-        2
+        4
     ),
     Ktor(
         "Ktor",
@@ -133,5 +159,13 @@ enum class Skill(
         Res.Images.KTOR_LOGO,
         SkillCategory.Frameworks,
         1
+    ),
+    KMP(
+        "KMP",
+        "Adept",
+        Res.Images.KMP_LOGO,
+        Res.Images.KMP_LOGO,
+        SkillCategory.Frameworks,
+        3
     ),
 }
