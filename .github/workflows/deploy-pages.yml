@@ -33,8 +33,11 @@ jobs:
       - name: Export static site
         run: ./gradlew :site:kobwebExport --stacktrace --info
 
-      - name: Ensure root index.html exists
-        run: cp site/.kobweb/site/system/index.html site/.kobweb/site/index.html
+      - name: Flatten exported site for Pages
+        run: |
+          cp site/.kobweb/site/system/index.html site/.kobweb/site/index.html
+          cp site/.kobweb/site/system/*.js* site/.kobweb/site/ || true
+          cp -R site/.kobweb/site/resources/* site/.kobweb/site/ || true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
