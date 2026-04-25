@@ -45,9 +45,7 @@ object Res {
 
 
         const val GET_IN_TOUCH_DISCRIPTION =
-            "Feel free to reach out for collaboration or project inquiries. I’m always open to connecting with professionals who share a passion for technology and innovation.\n\n" +
-                    "Whether you’re looking for a dedicated developer to bring your ideas to life or would like to discuss new opportunities, I’d be glad to connect.\n\n" +
-                    "Let’s work together to create impactful and meaningful solutions."
+            "I’m always open to connecting and collaborating with people who are passionate about technology and innovation. If you have a project in mind, an opportunity to explore, or are looking for a dedicated developer to help turn ideas into reality, feel free to reach out. I’d love to discuss how we can work together to build meaningful and impactful solutions."
     }
 
     object Title {
