@@ -33,7 +33,7 @@ fun DefaultPageLayout(
     val isVisible = rememberVisibility("home")
 
     LaunchedEffect(title) {
-        document.title = "Muhammad Noman"
+        document.title = title
     }
 
     Box(

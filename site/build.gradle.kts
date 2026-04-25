@@ -15,7 +15,7 @@ kobweb {
     app {
         index {
 
-            description.set("Explore the portfolio of Muhammad Noman - A passionate Android developer specializing in Kotlin, Jetpack Compose, and modern mobile solutions.")
+            description.set("Explore the portfolio of Sardar Khurram Pervaiz - A passionate Android developer specializing in Kotlin, Jetpack Compose, and modern mobile solutions.")
             head.add{
                 link( rel="preconnect", href="https://fonts.googleapis.com")
                 link( rel="preconnect",href="https://fonts.gstatic.com") {attributes["crossorigin"] = ""}

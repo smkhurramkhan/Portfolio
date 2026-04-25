@@ -11,12 +11,13 @@ import noman.components.layouts.DefaultPageLayout
 import noman.components.sections.about.ui.About
 import noman.components.sections.home.ui.Home
 import noman.components.sections.projects.ui.Projects
+import noman.components.utils.Res
 import noman.toSitePalette
 
 @Page
 @Composable
 fun HomePage() {
-    DefaultPageLayout("Muhammad Noman") {
+    DefaultPageLayout(Res.Constants.NAME) {
 
         Column (
             modifier = Modifier.fillMaxSize(),
