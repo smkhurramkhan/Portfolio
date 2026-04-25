@@ -28,7 +28,7 @@ kobweb {
 kotlin {
     // This example is frontend only. However, for a fullstack app, you can uncomment the includeServer parameter
     // and the `jvmMain` source set below.
-    configAsKobwebApplication("noman" /*, includeServer = true*/)
+    configAsKobwebApplication("khurram" /*, includeServer = true*/)
 
     sourceSets {
         commonMain.dependencies {

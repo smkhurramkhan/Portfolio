@@ -7,9 +7,9 @@ server:
     dev:
       contentRoot: "build/processedResources/js/main/public"
       script: "build/kotlin-webpack/js/developmentExecutable/khurram.js"
-      api: "build/libs/noman.jar"
+      api: "build/libs/khurram.jar"
     prod:
-      script: "build/kotlin-webpack/js/productionExecutable/noman.js"
+      script: "build/kotlin-webpack/js/productionExecutable/khurram.js"
       siteRoot: ".kobweb/site"
 
   port: 8080
