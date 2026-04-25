@@ -162,7 +162,7 @@ fun MobileHeroContent(
                 )
                 // Profile image
                 Image(
-                    src = "images/main_profile.jpg",
+                    src = "images/main_profile.png",
                     modifier = Modifier
                         .size(168.px)
                         .borderRadius(50.percent)

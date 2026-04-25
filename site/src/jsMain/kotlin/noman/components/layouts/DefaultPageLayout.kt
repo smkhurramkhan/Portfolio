@@ -64,7 +64,7 @@ fun DefaultPageLayout(
         )
 
         Image(
-            src = "images/main_profile.jpg",
+            src = "images/main_profile.png",
             modifier = Modifier
                 .displayIfAtLeast(Breakpoint.LG)
                 .position(Position.Absolute)
