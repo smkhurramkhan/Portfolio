@@ -13,6 +13,48 @@ import noman.components.utils.Res.Constants
 
 
 fun getAllProjects() = listOf(
+
+    Project(
+        imageSrc = Res.Images.COMERA,
+        name = "Comera",
+        description = "Comera is a free-messaging app that allows you to talk to your friends and family via one-to-one chats, voice calls, and video calls",
+        tag = "Android App",
+        techs = listOf("Kotlin", "Xml","WebRTC","XMPP"),
+        url = Constants.COMERA,
+        suggestIcon = Res.Images.PLAY_STORE_LOGO,
+    ),
+
+    Project(
+        imageSrc = Res.Images.JAZZ_DRIVE,
+        name = "Jazz Drive",
+        description = "Jazz Drive - Secure cloud backup for photos, videos, and files. Access and share anytime.",
+        tag = "Android App",
+        techs = listOf("Kotlin", "XML"),
+        url = Constants.JAZZ_DRIVE,
+        suggestIcon = Res.Images.PLAY_STORE_LOGO,
+    ),
+
+
+    Project(
+        imageSrc = Res.Images.FIT_FLEX,
+        name = "FitFlex",
+        description = "Smart workouts, custom plans, and progress tracking to help you get stronger.",
+        tag = "Android App",
+        techs = listOf("Kotlin","XML"),
+        url = Constants.FITFLEX,
+        suggestIcon = Res.Images.PLAY_STORE_LOGO,
+    ),
+
+    Project(
+        imageSrc = Res.Images.FARM_TO_HOME,
+        name = "Farm 2 Home",
+        description = "Fresh Fruits, Vegetables, Chicken, Meat, Pharmacy and other Grocery items!.",
+        tag = "Android App",
+        techs = listOf("Kotlin", "Jetpack Compose"),
+        url = Constants.FARM_TO_HOME,
+        suggestIcon = Res.Images.PLAY_STORE_LOGO,
+    ),
+
     Project(
         imageSrc = Res.Images.MEDIC,
         name = "Medic",
@@ -22,52 +64,14 @@ fun getAllProjects() = listOf(
         url = Constants.MEDIC_URL,
         suggestIcon = Res.Images.PLAY_STORE_LOGO,
     ),
-
     Project(
-        imageSrc = Res.Images.WHATS_DELETE,
-        name = "WhatsDelete",
-        description = "All-in-one chat toolkit to recover messages, save statuses, and enhance messaging.",
+        imageSrc = Res.Images.LISAX,
+        name = "LISA Hockey\n",
+        description = "This app is indispensable for parents, players, trainers, coaches and managers.",
         tag = "Android App",
-        techs = listOf("Kotlin", "Xml"),
-        url = Constants.WHATS_DELETE_URL,
-        suggestIcon = Res.Images.PLAY_STORE_LOGO,
-    ),
+        techs = listOf("Kotlin", "JAVA", "Firebase"),
+        url = Constants.LISA_HOCKEY,
+        suggestIcon = Res.Images.LISAX,
+    )
 
-    Project(
-        imageSrc = Res.Images.ALL_DOC_READER,
-        name = "All Document Reader & Viewer",
-        description = "All-in-one document reader to view PDF, Word, Excel, and PowerPoint files easily.",
-        tag = "Android App",
-        techs = listOf("Kotlin", "Xml"),
-        url = Constants.ALL_DOC_READER_URL,
-        suggestIcon = Res.Images.PLAY_STORE_LOGO,
-    ),
-
-    Project(
-        imageSrc = Res.Images.VIDEO_GRAB_PROJECT,
-        name = "Video Grab",
-        description = "A powerful video and audio downloader for Android.",
-        tag = "Android App",
-        techs = listOf("Kotlin", "Compose", "yt-dlp"),
-        url = Constants.VIDEO_GRAB_URL,
-        suggestIcon = Res.Images.GITHUB_LIGHT_LOGO,
-    ),
-    Project(
-        imageSrc = Res.Images.FIREBASE_NOTIFIER,
-        name = "Easy Firebase Notifier",
-        description = "A lightweight Android library for simplifying Firebase Cloud Messaging (FCM) integration.",
-        tag = "Android Library",
-        techs = listOf("Kotlin", "Compose", "Firebase"),
-        url = Constants.EASY_FIREBASE_NOTIFIER_URL,
-        suggestIcon = Res.Images.GITHUB_LIGHT_LOGO,
-    ),
-    Project(
-        imageSrc = Res.Images.IMG_CRAFT,
-        name = "ImgCraft",
-        description = "An Android image editing library featuring real-time filters and professional-quality rendering.",
-        tag = "Android Library",
-        techs = listOf("Kotlin", "NDK", "Compose", "xml"),
-        url = Constants.IMG_CRAFT_URL,
-        suggestIcon = Res.Images.GITHUB_LIGHT_LOGO,
-    ),
 )

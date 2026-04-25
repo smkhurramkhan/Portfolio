@@ -2,6 +2,7 @@ package noman.components.sections.about.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import com.varabyte.kobweb.compose.css.TextAlign
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column

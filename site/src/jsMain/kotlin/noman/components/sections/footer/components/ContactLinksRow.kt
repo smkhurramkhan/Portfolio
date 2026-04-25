@@ -28,9 +28,9 @@ fun ContactLinksRow(
             Res.Constants.LINKEDIN_URL
         ) { FaLinkedinIn(size = IconSize.XXL) }
 
-//        SocialLinkButton(
-//            Res.Constants.DISCORD_URL
-//        ) { FaDiscord(size = IconSize.XXL) }
+        SocialLinkButton(
+            Res.Constants.TWITTER_URL
+        ) { FaTwitter(size = IconSize.XXL) }
 
         SocialLinkButton(
             Res.Constants.WHATSAPP_URL
