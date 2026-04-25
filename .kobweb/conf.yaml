@@ -1,15 +1,15 @@
 site:
-  title: "Muhammad Noman"
+  title: "Sardar Khurram Pervaiz"
   basePath: "Portfolio"
 
 server:
   files:
     dev:
-      contentRoot: "build/processedResources/js/main/public"
-      script: "build/kotlin-webpack/js/developmentExecutable/noman.js"
-      api: "build/libs/noman.jar"
+      contentRoot: "site/build/processedResources/js/main/public"
+      script: "site/build/kotlin-webpack/js/developmentExecutable/khurram.js"
+      api: "site/build/libs/noman.jar"
     prod:
-      script: "build/kotlin-webpack/js/productionExecutable/noman.js"
-      siteRoot: ".kobweb/site"
+      script: "site/build/kotlin-webpack/js/productionExecutable/noman.js"
+      siteRoot: "site/.kobweb/site"
 
-  port: 8080
+  port: 8081

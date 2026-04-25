@@ -1,3 +1,6 @@
 # Kobweb ignores
 .kobweb/*
 !.kobweb/conf.yaml
+
+# Local machine config (do not commit)
+../local.properties
