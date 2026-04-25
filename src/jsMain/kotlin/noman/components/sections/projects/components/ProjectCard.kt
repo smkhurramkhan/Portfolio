@@ -53,7 +53,7 @@ import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
 
 /*
- * Copyright 2026 Muhammad Noman
+ * Copyright 2026 Sardar Khurram Pervaiz
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

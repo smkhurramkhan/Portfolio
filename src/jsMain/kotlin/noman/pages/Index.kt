@@ -16,7 +16,7 @@ import noman.toSitePalette
 @Page
 @Composable
 fun HomePage() {
-    DefaultPageLayout("Muhammad Noman") {
+    DefaultPageLayout("Sardar Khurram Pervaiz") {
 
         Column (
             modifier = Modifier.fillMaxSize(),
