@@ -56,7 +56,7 @@ fun ContactProfileImage(modifier: Modifier = Modifier) {
 
     ) {
         Image(
-            src = "images/profile.png",
+            src = "images/profile.jpg",
             modifier = Modifier
                 .width(220.px)
                 .height(280.px)

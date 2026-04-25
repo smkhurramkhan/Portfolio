@@ -33,7 +33,7 @@ fun DefaultPageLayout(
     val isVisible = rememberVisibility("home")
 
     LaunchedEffect(title) {
-        document.title = "Muhammad Noman"
+        document.title = "Sardar Khurram Pervaiz"
     }
 
     Box(
@@ -64,7 +64,7 @@ fun DefaultPageLayout(
         )
 
         Image(
-            src = "images/main_profile.png",
+            src = "images/main_profile.jpg",
             modifier = Modifier
                 .displayIfAtLeast(Breakpoint.LG)
                 .position(Position.Absolute)
