@@ -17,6 +17,11 @@ kobweb {
 
             description.set("Explore the portfolio of Sardar Khurram Pervaiz - A passionate Android developer specializing in Kotlin, Jetpack Compose, and modern mobile solutions.")
             head.add{
+                // Favicons: some browsers are picky about ICO decoding in tabs; provide PNG fallbacks too.
+                link(rel = "icon", href = "/Portfolio/images/profile.png", type = "image/png")
+                link(rel = "shortcut icon", href = "/Portfolio/favicon.ico", type = "image/x-icon")
+                link(rel = "apple-touch-icon", href = "/Portfolio/images/profile.png")
+
                 link( rel="preconnect", href="https://fonts.googleapis.com")
                 link( rel="preconnect",href="https://fonts.gstatic.com") {attributes["crossorigin"] = ""}
                 link( href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap", rel="stylesheet")
