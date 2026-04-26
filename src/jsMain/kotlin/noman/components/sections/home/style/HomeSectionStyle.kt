@@ -75,11 +75,11 @@ val UserNameStyle = CssStyle {
     }
 
     Breakpoint.LG {
-        Modifier.fontSize(4.cssRem)
+        Modifier.fontSize(3.5.cssRem)
     }
 
     Breakpoint.XL {
-        Modifier.fontSize(4.cssRem)
+        Modifier.fontSize(3.5.cssRem)
     }
 }
 
