@@ -47,14 +47,7 @@ enum class Skill(
         3
     ),
 
-    XMPP(
-        "XMPP",
-        "Skilled",
-        Res.Images.XMPP_LOGO,
-        Res.Images.XMPP_LOGO,
-        SkillCategory.Languages,
-        3
-    ),
+
 
     CPP(
         "C++",
@@ -165,6 +158,22 @@ enum class Skill(
         "Adept",
         Res.Images.KMP_LOGO,
         Res.Images.KMP_LOGO,
+        SkillCategory.Frameworks,
+        3
+    ),
+    XMPP(
+        "XMPP",
+        "Skilled",
+        Res.Images.XMPP_LOGO,
+        Res.Images.XMPP_LOGO,
+        SkillCategory.Frameworks,
+        3
+    ),
+    WEBRTC(
+        "WEBRTC",
+        "Skilled",
+        Res.Images.WEB_RTC_LOGO,
+        Res.Images.WEB_RTC_LOGO,
         SkillCategory.Frameworks,
         3
     ),

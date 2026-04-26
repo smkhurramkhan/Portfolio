@@ -42,9 +42,6 @@ fun ContactLinksRow(
             Res.Constants.WHATSAPP_URL
         ) { FaWhatsapp(size = IconSize.XXL) }
 
-//        SocialLinkButton(
-//            Res.Constants.TELEGRAM_URL
-//        ) { FaTelegram(size = IconSize.XXL) }
 
         SocialLinkButton(
             Res.Constants.INSTAGRAM_URL
