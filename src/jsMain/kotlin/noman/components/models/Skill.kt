@@ -47,8 +47,6 @@ enum class Skill(
         3
     ),
 
-
-
     CPP(
         "C++",
         "Skilled",
